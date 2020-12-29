@@ -1,0 +1,117 @@
+.input_b .text1::before{
+  margin-right: 5px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image:url("img/Icon_plate_2.png") ;
+  display: inline-block;
+}
+.input_b .text2::before{
+  margin-right: 5px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image:url("img/Icon_list_2.png") ;
+  display: inline-block;
+}
+#id1:checked + .text1::before{
+  margin-right: 5px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image:url("img/Icon_plate.png") ;
+  display: inline-block;
+}
+#id2:checked + .text2::before{
+  margin-right: 5px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image:url("img/Icon_list.png") ;
+  display: inline-block;
+  color: green;
+}
+.item_label {
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(92, 90, 90, 0.623);
+    width: auto;
+    text-align: center;
+    font-family: arial;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  .description{
+    
+    float: right;
+    max-width: 200px;
+    margin-right: 50px;
+    margin-top: -170px;
+    font-size: 13px;
+  }
+  .price_tag {
+    color: red;
+    font-size: 22px;
+  }
+  
+ 
+  .h1 {
+      color: rgb(119, 119, 241);
+      font-size: 18px;
+  }
+  .item_desc {
+    color: grey;
+    font-size: 14px;
+  }
+ 
+  .img_1 {
+    float: left;
+    margin-left: 5px;
+      max-width: 150px;
+      max-height: 150px;
+  }
+  .img_2 {
+    float: left;
+    max-width: 200px;
+    max-height: 150px;
+  }
+  .img_3 {
+    float: left;
+    max-width: 200px;
+    max-height: 130px;
+}
+.img_4 {
+  float: left;
+  max-width: 130px;
+  max-height: 130px;
+}
+.img_5 {
+  float: left;
+  max-width: 128px;
+  max-height: 128px;
+}
+.img_6 {
+  float: left;
+  max-width: 135px;
+  max-height: 145px;
+}
+.stars label::after {
+  content: '\2606';
+  color: orange;
+  font-size: 30px;
+  cursor: pointer;
+}
+.stars:hover label::after{
+  content: '\2606';
+}
+
+input:hover ~ label::after,
+input:checked ~ label::after{
+  content: '\2605';
+}
+.stars{
+  direction: rtl;
+  text-align: center;
+}
+input{
+  display: none;
+}
